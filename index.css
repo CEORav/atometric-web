@@ -1,0 +1,717 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Gayathri', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+html {
+scroll-behavior: smooth;
+scroll-snap-type: y mandatory; /* Enable vertical snap points */
+scroll-snap-destination: 0% 100%; /* Set snap points at the start and end of each section */
+}
+
+
+/** DIV holding the images and Background video **/
+.slideshow { 
+display: flex;
+/* position: relative; */
+max-width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+/** CENTER LOGO DIV **/
+
+.logooff{
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    /* position: relative; */
+    height: 375px;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    border: 1px solid rgba(212, 69, 212, 0.806);
+        box-shadow: 2px 10px 20px rgba(7, 7, 255, 0.256);
+        border-radius: 0.26em;
+ }
+ 
+
+ .video1 {
+    position: absolute;
+    z-index: -1;
+ }
+
+
+/* NAVBAR CUSTOMZ */
+
+
+ .nav {
+    display: flex; 
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+    font-family: 'Gayathri', sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    margin: 15px;
+    text-decoration: none;
+}
+
+.nav li { 
+    display: inline;  
+   margin-right: 20px;
+}
+nav a {
+    /* position: relative; */
+    font-size: 1.1em;
+    font-weight: 500;
+ align-items: center;
+    padding: 10px 90px;
+    color: rgba(82, 82, 82, 0.509);
+    background: rgba(245, 245, 245, 0.055);
+    transition: .1s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: rgba(202, 41, 202, 0.603);
+    box-shadow: 3px 5px 8px rgb(48, 24, 166);
+}
+
+
+/** ABOUT SECTION **/
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+   font-size: 3.5em;
+   margin-bottom: 30px; 
+   display: flex;
+   justify-content: center;
+}
+
+
+.content {
+    position: relative; 
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    font-family: 'Gayathri', sans-serif;
+}
+
+.content .img2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.content .img2 img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 15%;
+    filter: blur(10px);
+
+}
+
+.content .text {
+    z-index: 222;
+   background-color: rgba(82, 27, 91, 0.877);
+   padding: 40px;
+   border: 1px solid rgba(65, 23, 71, 0.897);
+   max-width: 400px;
+   border-radius: 10px;
+   box-shadow: 10px 10px 5px rgba(184, 128, 202, 0.833);
+   transform : translate(-80px, 50px);
+}
+
+.content .text p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+
+
+/* Menu options on nav bar */
+.menu {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+ box-sizing: border-box;
+}
+ #list {
+    font-size: 1.5em;
+    align-items: baseline;
+    z-index: 150;
+    /* background-color: rgba(83, 27, 91, 0.317);
+    border: 1px solid rgba(65, 23, 71, 0.897); */
+    max-width: 400px;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 5px rgba(66, 20, 82, 0.525); */
+    margin-top: 50%;
+    margin-right: 80%;
+
+ }
+    
+
+ @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+
+
+/** 3rd SECTION : MACHINES **/
+
+
+#cnc {
+    margin-top: 20%;
+}
+.options {
+    flex-wrap: wrap;
+    background-color: rgba(128, 128, 128, 0.098);
+    padding: 30px;
+    width: 15%;
+    justify-content: space-evenly;
+    margin: 3%;
+    border: 2px solid rgba(160, 164, 164, 0.221);
+    box-shadow: 3px 2px 5px rgba(22, 13, 136, 0.808);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 2px;
+    animation: float 8s ease-out infinite; 
+    animation-direction: reverse;
+    cursor: pointer;
+}
+
+.options:hover {
+    
+    box-shadow: 5px 5px 5px rgb(76, 44, 220);
+}
+
+
+@keyframes float {
+    50%{
+      transform: translateY(50px);
+    }
+  }
+  
+  .task {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+ .options h4 {
+color: rgba(255, 255, 255, 0.61);
+text-align: center;
+justify-content: center;
+margin-top: 15%;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Gayathri', sans-serif;
+font-family: 'Outfit', sans-serif;
+ }
+
+
+
+/** DIV GROUP (4) IN EACH GROUP **/
+
+
+
+
+.group1 {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#one::before {
+    
+        content: "(3) X, Y, Z axes. (4) Axes : X, Y, Z plus rotational table. (5) Axes : X, Y, Z plus tables rotate and trunion).  5 kg (11 lbs.)";
+        position: relative;
+        top: 1;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.42);
+        color: #fff;
+        font-size: 15px;
+        line-height: 50px;
+        word-spacing: 10px;
+    }
+#one:hover::before {
+    display: block;
+}
+#two::before {
+    
+    content: "5 lbs (2.73 kg);<br> Higher payload, as special.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#two:hover::before {
+display: block;
+}
+#three::before {
+    
+    content: "1000 RPM Servo air cooled spindle as standard, 200,000 RPM water chilled servo spindle, specific higher power or alternate RPM spindles.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#three:hover::before {
+display: block;
+}
+#four::before {
+    
+    content: "/Decs XYZ of >2 G’s; Speed maximum of 30 m/min. Note: Typical applications use Acc/Dec of ~ <=2G.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#four:hover::before {
+display: block;
+}
+
+
+/***/
+
+.group2 {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+#five::before {
+    content: "0.6 μm to position, ~2 micron along path (dynamic).";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#five:hover::before {
+display: block;
+}
+#six::before {
+    content: "XYZ 0.1 µm all axes individually. Linear axes have 5 nanometer resolution optical scales.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#six:hover::before {
+display: block;
+}
+
+#seven::before {
+    
+    content:"XYZ 0.3 µm to position, ~1 micron along path (dynamic). Z Z can add 1 micron tool holding variation auto tool change.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#seven:hover::before {
+display: block;
+}
+#eight::before {
+    
+    content: "25 tools per cartridge; With additional cartridges and/or part fixtures, (14) new tools input < 30 seconds. Tool position repeatability & validation of tool tip depth within one micron.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#eight:hover::before {
+display: block;
+}
+
+
+/***/
+
+
+
+.group3 {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+#nine::before {
+    
+    content: "Validation of tool tip depth within one micron.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#nine:hover::before {
+display: block;
+}
+#ten::before {
+    
+    content: "(Standard) Contact probing within one micron. G-codes supporting application usage.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#ten:hover::before {
+display: block;
+}
+#eleven::before {
+    
+    content: "X  101 mm (4 inch) work envelop. Y  101 mm (4 inch) work envelop. Z  76 mm (3 inch) stroke. 101 mm (4 nch) work envelop w/ table rotation.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#eleven:hover::before {
+display: block;
+}
+#twelve::before {
+    
+    content: "G code program storage in .txt files. CAM option programs semi-auto generated from SolidWorks, ACAD, STEP files.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#twelve:hover::before {
+display: block;
+}
+
+
+
+/****/
+
+
+.group4 {
+    display: flex;
+    justify-content: center;
+}
+
+#teen3::before {
+    
+    content: "Macro capabilities User interface for manual, program call and G-code programs. Macros for planarizing, surface probing, tool change, part shifts, peck drilling, etc. CAM option semi-auto generates complex path multiple-tool part programs.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#teen3:hover::before {
+display: block;
+}
+#teen4::before {
+    
+    content: "Table options for 3, 4, or 5 axes, 200k RPM spindle, CAM software, 5-axis contour milling, additional tool changer and pallet cartridges.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#teen4:hover::before {
+display: block
+}
+#teen5::before {
+    
+    content: "Probe option for non-conducting and translucent/transparent materials. 0Automatic deployment. Accuracy < 1 micron. G code supported.";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    word-spacing: 10px;
+}
+#teen5:hover::before {
+display: block;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+ 
+#teen6 {
+    position:static;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db00;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+}
+
+#teen6::before {
+    
+        content: "Flood and directed recirculated filtered coolant, G-code directed.";
+        position: relative;
+        top: 0;
+        bottom: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.42);
+        color: #fff;
+        font-size: 12px;
+        line-height: 100px;
+    }
+#teen6:hover::before {
+    display: block;
+}
+#teen6 {
+    margin-left: 43%; //** NEVER Delete : Keeps "Cooling Systems in the middle**/
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+   
+#gif1 {
+    width:700px;
+    height: 500px;
+    padding: 22px;
+}
+.tell {
+    font-size: 1.5em;
+    right: 50%;
+    margin-left: 55%;
+    margin-top: 23%;
+    background: rgba(82, 82, 85, 0.511);
+    color: rgba(255, 255, 255, 0);
+    z-index: 222;
+    background-color: rgba(52, 23, 86, 0.395);
+    padding: 40px;
+    border: 1px solid rgba(212, 95, 244, 0.897);
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(43, 52, 179, 0.833);
+    transform : translate(-80px, 50px);
+    line-height: 22px;
+    word-spacing: 35%;
+ }
+
+
+
+/** 4TH SECTION: CONTRACTING **/
+
+.no {
+    font-size: 20px;
+    padding: 45px;
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.no input {
+  padding: 10px;  
+  width: 22%;
+  border: 1px solid rgba(21, 24, 66, 0.594);
+  background: rgba(116, 113, 113, 0.119);
+  border-radius: 5px;
+  outline: none;
+}
+  
+#name:hover,
+#email:hover {
+  transform: translateX(5px); /* Move 10px to the right on hover */
+  transition: transform 0.3s ease-in; /* Smooth transition effect */
+}
+ .button {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 2px;
+    margin-right: 10px;
+    color: rgba(75, 15, 240, 0.58);
+    border: 1px solid rgba(21, 24, 66, 0.594);
+    background: rgba(116, 113, 113, 0.119);
+    border-radius: 1px;
+    cursor: pointer;
+ }
+
+#form {
+    margin-top: 20%;
+}
+#contract {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+
+
+/** 5TH SECTION : FOOTER**/
+
+
+.love1 {
+    font-size: 12.5px;
+    padding: 3%;
+    /* margin-bottom: 55px;
+    margin-top: 55px; */
+    background-color: rgba(55, 18, 118, 0.24); 
+
+}
+
+ 
+#imgbom {
+    width: 250px;
+    height: 100px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+
+    
+
+#footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    text-align: bottom;
+    background-color: rgba(55, 18, 118, 0.24);
+    text-align: center;
+}
+
+
+#footer2 {
+    margin-top: .5%;
+  
+}
+
+#president {
+    font-size: 32px;
+    right: 3;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    text-align: bottom;
+    background-color: rgba(55, 18, 118, 0);
+    text-align: right; 
+}
+
+#bottom-nav {
+    margin-top: 5%;
+    background-color: rgba(55, 18, 118, 0);
+    
+}
+ 
+#bottomvid {
+   width:500px;
+   height:300px;
+   margin-bottom: 55px;
+}
+#cell {
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
